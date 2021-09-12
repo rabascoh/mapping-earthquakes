@@ -29,7 +29,7 @@ let map = L.map('mapid', {
 L.control.layers(baseMaps).addTo(map);
 
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/rabascoh/mapping-earthquakes/mapping-geojson-polygons/torontoNeighborhoods.json";
+let torontoHoods = "https://raw.githubusercontent.com/rabascoh/mapping-earthquakes/main/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
